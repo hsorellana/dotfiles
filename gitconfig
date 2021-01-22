@@ -1,0 +1,9 @@
+[alias]
+	b = branch
+	ch = checkout
+	st = status
+	lg = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	d = diff
+
+[pull]
+	rebase = false
