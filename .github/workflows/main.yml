@@ -28,3 +28,5 @@ jobs:
         run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       - name: Output homebrew version
         run: brew -v
+      - name: Install dependencies from Brewfile
+        run: brew bundle
