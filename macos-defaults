@@ -1,25 +1,21 @@
 #!/usr/bin/env bash
 
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
 # Ask for the administrator password upfront
 sudo -v
-
-###############################################################################
-# General UI/UX                                                               #
-###############################################################################
 
 # Menu bar: show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent YES
 
-###############################################################################
-# Dock                                                                        #
-###############################################################################
-
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
-###############################################################################
-# Calendar                                                                    #
-###############################################################################
-
 # Week starts on monday
 defaults write com.apple.iCal "first day of week" -int 1
+
+# Avoid creating .DS_Store files on network or USB volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
