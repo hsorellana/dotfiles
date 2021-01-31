@@ -24,11 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Current directory
-        run: pwd
-      - name: Install homebrew
-        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-      - name: Output homebrew version
-        run: brew -v
+      - name: First setup script
+        run: /bin/bash ./setup_new_machine.sh
       - name: Install dependencies from Brewfile
         run: brew bundle
+      - name: Set symlinks
+        run: make sync
