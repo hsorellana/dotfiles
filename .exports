@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export GOPATH="~"
+export GOBIN="$GOPATH/bin"
+export PATH=$PATH:$GOPATH:$GOBIN

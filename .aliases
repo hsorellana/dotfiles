@@ -1,0 +1,11 @@
+#!/bin/bash
+
+alias src_bash="source ~/.bash_profile"
+alias ll="ls -alGF"
+alias ..="cd .."
+alias ...="cd ../../"
+alias dotfiles="code ~/.dotfiles"
+alias ag='ag --path-to-ignore ~/.ignore'
+alias h="history"
+alias grep="grep --color=auto"
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"

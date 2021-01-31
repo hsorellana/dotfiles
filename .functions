@@ -1,0 +1,4 @@
+# create folder and enter it
+mcd () {
+    mkdir "$1" && cd "$1"
+}
