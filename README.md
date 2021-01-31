@@ -1,13 +1,9 @@
 # .files
 
-## Install brew dependencies
-
 ```bash
+# install brew dependencies
 brew bundle
-```
 
-## Link files
-
-```bash
+# add symlinks
 make sync
 ```
