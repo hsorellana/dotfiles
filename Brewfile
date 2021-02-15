@@ -4,7 +4,6 @@ tap "warrensbox/tap"
 
 # brew formulaes
 brew "coreutils"
-brew "curl"
 brew "go"
 brew "detox"
 brew "fzf"
@@ -25,6 +24,7 @@ brew "wifi-password"
 brew "k9s"
 brew "neovim"
 brew "mas"
+brew "httpie"
 
 # cask formulaes
 cask "google-chrome"
