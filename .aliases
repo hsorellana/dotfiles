@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 alias src_bash="source ~/.bash_profile"
 alias ll="ls -alGF"
