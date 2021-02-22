@@ -47,3 +47,4 @@ brew cask install tunnelblick
 brew cask install ngrok
 brew cask install sequel-pro
 brew cask install visual-studio-code
+brew cask install eul
