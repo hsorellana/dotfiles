@@ -57,22 +57,20 @@ brew install golang-migrate
 brew install nmap
 brew install exa
 
-
-brew cask install google-chrome
-brew cask install spotify
-brew cask install iterm2
-brew cask install slack
-brew cask install 1password
-brew cask install postman
-brew cask install zoom
-brew cask install virtualbox
-# brew cask install minikube
-brew cask install rectangle
-brew cask install vlc
-brew cask install tunnelblick
-brew cask install ngrok
-brew cask install sequel-pro
-brew cask install visual-studio-code
-brew cask install eul
+brew install --cask google-chrome
+brew install --cask spotify
+brew install --cask iterm2
+brew install --cask slack
+brew install --cask 1password
+brew install --cask postman
+brew install --cask zoom
+brew install --cask virtualbox
+brew install --cask rectangle
+brew install --cask vlc
+brew install --cask tunnelblick
+brew install --cask ngrok
+brew install --cask sequel-pro
+brew install --cask visual-studio-code
+brew install --cask eul
 
 brew cleanup
