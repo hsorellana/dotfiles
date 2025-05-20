@@ -1,7 +1,5 @@
-#!/usr/bin/env bash
-
 alias src_bash="source ~/.bash_profile"
-alias ll="ls -alGF"
+alias ll="ls -al"
 alias ..="cd .."
 alias ...="cd ../../"
 alias dotfiles="code ~/.dotfiles"
